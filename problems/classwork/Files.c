@@ -23,11 +23,12 @@ int main (int argc, char** args) {
     printf("read content: %s", buffer);
     close(fd);
 
-    int fd_w = open("example.txt", O_CREAT | O_WRONLY);
+    int fd_w = open("example.txt", O_CREAT | O_RDWR, 0666);
     if (fd_w == -1) {
         perror("Error write");
         return 1;
     }   
+    
 
     return 0;
 }
