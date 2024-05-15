@@ -17,6 +17,9 @@ int main(int argc, char** argv)
     sleep(5);
     printf("Finish child block\n");
   } else {
+    pid_t child_pid_status2 = fork();
+
+    
     // parent process
     printf("main process pid(%d), ppid(%d)\n", getpid(), getppid());
 
