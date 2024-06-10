@@ -3,7 +3,8 @@
         {
             "name": "LinuxConf",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "/usr/src/linux-headers-$(uname -r)/build"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
@@ -25,7 +26,8 @@
         {
             "name": "Linux Conf",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "/usr/src/linux-headers-$(uname -r)/build"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
